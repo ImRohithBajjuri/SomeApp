@@ -1,0 +1,81 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SomeApp/app/src/main/res/drawable-v24/snackbar_background.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/bottom_sheet_shape.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/circle_background.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_account_circle_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_add_24.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_arrow_back_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_arrow_circle_down_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_circle_24.xml" value="0.135" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_delivery_dining_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_do_disturb_30.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_download_done_30.xml" value="0.135" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_edit_location_alt_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_exit_to_app_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_favorite_30.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_local_shipping_30.xml" value="0.135" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_location_city_30.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_move_to_inbox_30.xml" value="0.135" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_person_100.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_phone_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_remove_24.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_settings_30.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_shopping_cart_100.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_shopping_cart_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_shopping_cart_checkout_30.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_star_24.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/ic_round_unstar.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/profile_layer_bgr.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/profile_layer_list_100.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/rating_drawable.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/rippleblack.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/round_delete_30.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/round_rect_back.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/round_ripple.xml" value="0.147" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/selection_background.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/snackbar_background.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/text_cursor.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/drawable/upi_color.xml" value="0.1" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_address.xml" value="0.2" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_cart.xml" value="0.16" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_checkout.xml" value="0.22" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_favourites_page.xml" value="0.15" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_order_info.xml" value="0.25" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_orders.xml" value="0.16" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_product_info_page.xml" value="0.2" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_product_page.xml" value="0.2" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_profile_page.xml" value="0.25" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_settings_page.xml" value="0.15" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/activity_tracking.xml" value="0.349609375" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/address_item.xml" value="0.1361111111111111" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/cart_item.xml" value="0.1859375" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/checkout_item.xml" value="0.1859375" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/current_order_item.xml" value="0.15" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/fragment_address_options_sheet.xml" value="0.2" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/fragment_blank.xml" value="0.16417272338606242" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/fragment_clothing_page.xml" value="0.16417272338606242" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/fragment_milk_page.xml" value="0.2" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/fragment_new_address_sheet.xml" value="0.22" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/fragment_order_info_support_sheet.xml" value="0.15" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/fragment_soy_page.xml" value="0.2" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/order_item.xml" value="0.1361111111111111" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/orders_item.xml" value="0.2" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/prodcut_item.xml" value="0.1859375" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/product_image_item.xml" value="0.1526293287729799" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/product_item.xml" value="0.22" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/product_item_2.xml" value="0.1859375" />
+        <entry key="..\:/SomeApp/app/src/main/res/layout/product_item_3.xml" value="0.1859375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

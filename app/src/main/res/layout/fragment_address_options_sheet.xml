@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddressOptionsSheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address name"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/addressItemSheetHeader"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Edit address"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="20dp"
+        android:background="@drawable/ripple_black"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:id="@+id/addressItemSheetEdit"
+        app:drawableStartCompat="@drawable/ic_round_edit_location_alt_30" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Remove"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="20dp"
+        android:background="@drawable/ripple_black"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/addressItemSheetRemove"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/round_delete_30"
+        android:drawablePadding="5dp"
+        />
+</LinearLayout>

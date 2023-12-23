@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity"
+    android:background="@color/lightGrey">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrey"
+        android:scrollbarSize="0dp"
+        android:id="@+id/cktParent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:elevation="0dp"
+                android:id="@+id/checkoutAppBar">
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:title="Checkout"
+                    app:titleTextColor="@color/blue"
+                    android:id="@+id/cktToolbar"
+                    app:navigationIcon="@drawable/ic_round_arrow_back_30"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="your items"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/cktItemsSubHeader"
+                app:layout_constraintTop_toBottomOf="@id/checkoutAppBar"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cktItemsRecy"
+                app:layout_constraintTop_toBottomOf="@id/cktItemsSubHeader"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="21sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/cktItemsRecy"
+                android:id="@+id/cktItemName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This includes packaging material"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto"
+                android:id="@+id/cktItemDes"
+                app:layout_constraintTop_toBottomOf="@id/cktItemName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/grey"
+                android:hint="Enter any extra notes you want to here"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto"
+                android:id="@+id/cktUserNote"
+                app:layout_constraintTop_toBottomOf="@+id/cktItemDes"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textCursorDrawable="@drawable/text_cursor"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="billing details"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/cktBillingSubHeader"
+                app:layout_constraintTop_toBottomOf="@id/cktUserNote"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cktBillingSubHeader"
+                android:id="@+id/cktBillingCard"
+                android:layout_margin="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Item name:"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/cktBillingNameTxt"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/cktBillingName"
+                        android:layout_margin="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity:"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cktBillingNameTxt"
+                        android:id="@+id/cktBillingQTxt"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cktBillingNameTxt"
+                        android:id="@+id/cktBillingQ"
+                        android:layout_margin="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total price:"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cktBillingQTxt"
+                        android:id="@+id/cktBillingTpTxt"
+                        android:layout_margin="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cktBillingQ"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/cktBillingTp"
+                        android:layout_margin="20dp"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="address"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/cktAddressSubHeader"
+                app:layout_constraintTop_toBottomOf="@id/cktBillingCard"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/cktAddressCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cktAddressSubHeader"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="21sp"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/cktAddressName"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="address"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="2"
+                        android:id="@+id/cktAddressLaneOne"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="address"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:id="@+id/cktAddressLaneTwo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="address"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:id="@+id/cktAddressDes"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:id="@+id/selectAddress"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="@dimen/buttonCornerRadius"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:layout_constraintTop_toBottomOf="@id/cktAddressCard"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="2dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select address"
+                    style="@style/TextAppearance.AppCompat.Widget.Button"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/selectAddressTxt"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="payment method"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/cktPaymentSubHeader"
+                app:layout_constraintTop_toBottomOf="@id/selectAddress"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="10dp"
+                android:id="@+id/cktPaymentCard"
+                app:layout_constraintTop_toBottomOf="@id/cktPaymentSubHeader"
+                >
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/cktPaymentGroup"
+                    >
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Google Pay"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="18sp"
+                        android:padding="20dp"
+                        app:drawableStartCompat="@drawable/google_pay"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/ripple_black"
+                        android:id="@+id/checkoutGooglePay"
+                        android:layout_marginStart="10dp"
+                        android:buttonTint="@color/blue"
+
+                        />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BHIM UPI"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="18sp"
+                        android:padding="20dp"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/ripple_black"
+                        android:gravity="center_vertical"
+                        android:id="@+id/checkoutUPI"
+                        android:layout_marginStart="10dp"
+                        android:buttonTint="@color/blue"
+                        android:drawableStart="@drawable/upi_color"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cash On Delivery"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="18sp"
+                        android:padding="20dp"
+                        android:drawableStart="@drawable/ic_cash"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/ripple_black"
+                        android:gravity="center_vertical"
+                        android:id="@+id/checkoutCOD"
+                        android:layout_marginStart="10dp"
+                        android:buttonTint="@color/blue"
+
+                        />
+
+
+                </RadioGroup>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:id="@+id/cktConfirmOrder"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="@dimen/buttonCornerRadius"
+                app:cardBackgroundColor="@color/blue"
+                app:layout_constraintTop_toBottomOf="@id/cktPaymentCard"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay and place your order"
+                    style="@style/TextAppearance.AppCompat.Widget.Button"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/cktConfirmOrderTxt"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/alphaWhite"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cktOrderPlacingSheen"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment successful, placing your order please wait..."
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="18sp"
+            android:id="@+id/cktOrderPlacingSheenText"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/cktOrderPlacingSheenText"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

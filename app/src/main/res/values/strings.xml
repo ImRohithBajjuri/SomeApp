@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The GG Store</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rs">\u20B9</string>
+    <!--    <string name="dummyId">12345</string>-->
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</string>
+    <string name="signInText">Sign in to add items to your favourites, cart and access your orders</string>
+</resources>

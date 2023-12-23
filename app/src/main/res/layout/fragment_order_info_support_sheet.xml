@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OrderInfoSupportSheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Support"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/orderInfoSupportHeader"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Contact support"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="20dp"
+        android:background="@drawable/ripple_black"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:id="@+id/infoSupportContact"
+        app:drawableStartCompat="@drawable/ic_round_phone_30" />
+
+
+</LinearLayout>
